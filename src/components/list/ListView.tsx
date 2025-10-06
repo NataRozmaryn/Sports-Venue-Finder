@@ -37,7 +37,7 @@ const ListView: React.FC<ListViewProps> = ({
       className={
         viewMode === 'grid'
           ? 'grid grid-cols-[305px_305px] gap-x-[20px] gap-y-[20px]'
-          : ''
+          : 'flex flex-col gap-[20px]'
       }
     >
       {venues.map((venue) => (
