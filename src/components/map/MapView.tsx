@@ -63,7 +63,7 @@ const MarkerClustererComponent: React.FC<MarkerClustererComponentProps> = ({
         position: { lat: venue.latitude, lng: venue.longitude },
         title: venue.name,
         icon: {
-          url: '/marker.svg',
+          url: `${process.env.NEXT_PUBLIC_BASE_PATH || ''}/marker.svg`,
           scaledSize: new google.maps.Size(27, 31)
         }
       });

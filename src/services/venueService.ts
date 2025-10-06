@@ -11,7 +11,7 @@ const fetcher = async (url: string) => {
 };
 
 export const useVenues = () => {
-  const { data, error } = useSWR<SportsVenue[]>('/api/venues', fetcher);
+  const { data, error } = useSWR<SportsVenue[]>(`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/api/venues`, fetcher);
 
   return {
     venues: data,

@@ -27,7 +27,7 @@ const FilterControls: React.FC<FilterControlsProps> = ({
           onChange={(e) => setCityFilter(e.target.value)}
           className="border border-gray-300 rounded-md p-2 pl-4 pr-10 w-[193px] h-[39px]"
         />
-        <Icon src="/arrow-down.svg" alt="arrow down" />
+        <Icon src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/arrow-down.svg`} alt="arrow down" />
       </div>
       <CustomSelect
         options={types}

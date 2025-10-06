@@ -44,7 +44,7 @@ const CustomSelect: React.FC<CustomSelectProps> = ({
         }`}
       >
         <span>{value || placeholder}</span>
-        <Icon src="/arrow-down.svg" alt="arrow down" />
+        <Icon src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/arrow-down.svg`} alt="arrow down" />
       </button>
       {isOpen && (
         <div className="absolute top-full mt-1 w-full bg-white border border-gray-300 rounded-md shadow-lg z-10">
